@@ -1,17 +1,24 @@
 package com.generalprocessingunit.processing;
 
-import android.app.*;
-import android.os.*;
-import android.view.*;
-import android.widget.*;
+import processing.core.PApplet;
 
-public class MainActivity extends Activity
+public class MainActivity extends PApplet
 {
-    /** Called when the activity is first created. */
     @Override
-    public void onCreate(Bundle savedInstanceState)
-	{
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+    public void setup()
+    {
+        orientation(LANDSCAPE);
+        super.setup();
+    }
+
+    @Override
+    public void draw()
+    {
+        super.draw();    //To change body of overridden methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public String sketchRenderer() {
+        return PApplet.P3D;
     }
 }
